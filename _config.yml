@@ -1,9 +1,9 @@
 permalink: /:year:month:day/:title
-url: #Your url here
-baseurl: /project
+url: mitrillov.github.io #Your url here
+baseurl: /win95
 
 # variables
-name: Your Site Name
+name: TST MTRLV
 description: Your description here
 google_verification: null
 

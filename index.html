@@ -1,78 +1,8 @@
-<!doctype html public "-//w3c//dtd html 3.2//en">
-
-<html>
-	
-	<head>
-		<title>
-			Web 1.0 RE
-		</title>
-		<meta name="GENERATOR" content="Arachnophilia 4.0">
-		<meta name="FORMATTER" content="Arachnophilia 4.0">
-		<meta name="AUTHOR" content="Orfey Mitrillov">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	</head>
-	
-	<body bgcolor="#212121" text="#ffffff" link="#f8bbd0" vlink="#d1a6cb" alink="#f06292">
-
-		<marquee width="100%" scrolldelay="3" behavior=scroll>
-		<font size="+1">
-			<font color=#424242>
-				Пихнуть в эту ладью ежа либо восемь ящиков фиг
-			</font>
-		</font>
-	</marquee>
-	<div align="center">
-		<h1>
-			<font color=#5C6BC0>
-				Web 1.0 revorked by Orfey Mitrillov
-			</font>
-		</h1>
-	</div>
-	<p>
-	<table  width="95%" border="1" cellspacing="1" cellpadding="4">
-	<tr>
-		<!-- Строка 1 ; столбец 1 -->
-		<td  align="center">
-			Без особых усилий с помощью талбиц можно запилить дерьмоформатирование Вашего сайта.
-		</td>
-		<!-- Строка 1 ; столбец 2 -->
-		<td  align="center">
-			Еще можно <b>поиграться</b> <i>со шрифтами</i>, к примеру, заюзав <font face="Comic Sans MS, Comic Sans, cursive">гарнитуру Comic Sans</font><br>
-Но так лучше не делать, чтобы вас не нашли и не убили Web-дизайнеры.
-		</td>
-	</tr>
-	<tr>
-		<!-- Строка 2 ; столбец 1 -->
-		<td  align="center">
-			Ghbznytt ukfpe 
-		</td>
-		<!-- Строка 2 ; столбец 2 -->
-		<td  align="center">
-			R2C2
-		</td>
-	</tr>
-	<tr>
-		<!-- Строка 3 ; столбец 1 -->
-		<td  align="center">
-			R3C1
-		</td>
-		<!-- Строка 3 ; столбец 2 -->
-		<td  align="center">
-			R3C2
-		</td>
-	</tr>
-	<tr>
-		<!-- Строка 4 ; столбец 1 -->
-		<td  align="center">
-			R4C1
-		</td>
-		<!-- Строка 4 ; столбец 2 -->
-		<td  align="center">
-			R4C2
-		</td>
-	</tr>
-</table>
-
-</body>
-
-</html>
+---
+layout: default
+---
+<ul>
+	{% for post in site.posts %}
+	<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
